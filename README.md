@@ -1,2 +1,2 @@
-# portfolio
-A TypeScript Website About Me
+# Portfolio
+Everything You May Need To Know About Me.
