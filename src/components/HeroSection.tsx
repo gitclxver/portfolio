@@ -68,7 +68,7 @@ function HeroSection({
 
         {/* Job Title, Location, and Age on a single line */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-lg text-gray-600 dark:text-gray-400">
-          <span>{data.age} year old</span>
+          <span>{data.age} Year Old</span>
           <span className="h-6 w-px bg-gray-400 dark:bg-gray-600"></span>
           <span>{data.jobTitle}</span>
           <span className="h-6 w-px bg-gray-400 dark:bg-gray-600"></span>
