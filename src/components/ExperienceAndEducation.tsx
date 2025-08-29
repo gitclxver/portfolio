@@ -15,42 +15,24 @@ import {
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "../components/ui/dialog";
 import { Briefcase, GraduationCap, Award } from "lucide-react";
+import CertificateCard from "../components/CertificateCard";
+import type {
+  CertificateItem,
+  ExperienceItem,
+  EducationItem,
+} from "../types/types";
 
-// Updated interfaces
-interface ExperienceItem {
-  title: string;
-  company: string;
-  duration: string;
-  description: string;
-}
-
-interface EducationItem {
-  qualification: string;
-  institution: string;
-  year: string;
-}
-
-// New interface for certificates
-interface CertificateItem {
-  title: string;
-  issuer: string;
-  date: string;
-  pdfUrl: string;
-}
-
-// Updated props interface to include certificates
 interface ExperienceAndEducationProps {
   experience: ExperienceItem[];
   education: EducationItem[];
   certificates: CertificateItem[];
 }
 
-function ExperienceAndEducation({
+export default function ExperienceAndEducation({
   experience,
   education,
   certificates,
@@ -66,90 +48,90 @@ function ExperienceAndEducation({
   };
 
   return (
-    <section id="experience-education" className="space-y-4">
+    <section id="experience-education" className="space-y-6">
       <Tabs defaultValue="experience" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="experience">
+        <TabsList className="grid w-full grid-cols-3 bg-gray-800">
+          <TabsTrigger
+            value="experience"
+            className="text-gray-200 data-[state=active]:bg-gray-700 data-[state=active]:text-white"
+          >
             <Briefcase className="mr-2 h-4 w-4" /> Experience
           </TabsTrigger>
-          <TabsTrigger value="education">
+          <TabsTrigger
+            value="education"
+            className="text-gray-200 data-[state=active]:bg-gray-700 data-[state=active]:text-white"
+          >
             <GraduationCap className="mr-2 h-4 w-4" /> Education
           </TabsTrigger>
-          <TabsTrigger value="certificates">
+          <TabsTrigger
+            value="certificates"
+            className="text-gray-200 data-[state=active]:bg-gray-700 data-[state=active]:text-white"
+          >
             <Award className="mr-2 h-4 w-4" /> Certificates
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="experience" className="mt-4">
-          <div className="space-y-4">
-            {experience.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
-                  <CardDescription>
-                    {item.company} | {item.duration}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+
+        <TabsContent value="experience" className="mt-6 space-y-4">
+          {experience.map((item, index) => (
+            <Card key={index} className="bg-gray-800 border-gray-700">
+              <CardHeader>
+                <CardTitle className="text-gray-100">{item.title}</CardTitle>
+                <CardDescription className="text-gray-400">
+                  {item.company} | {item.duration}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">{item.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </TabsContent>
-        <TabsContent value="education" className="mt-4">
-          <div className="space-y-4">
-            {education.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle>{item.qualification}</CardTitle>
-                  <CardDescription>
-                    {item.institution} | {item.year}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+
+        <TabsContent value="education" className="mt-6 space-y-4">
+          {education.map((item, index) => (
+            <Card key={index} className="bg-gray-800 border-gray-700">
+              <CardHeader>
+                <CardTitle className="text-gray-100">
+                  {item.qualification}
+                </CardTitle>
+                <CardDescription className="text-gray-400">
+                  {item.institution} | {item.year}
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          ))}
         </TabsContent>
-        <TabsContent value="certificates" className="mt-4">
-          <div className="space-y-4">
+
+        <TabsContent value="certificates" className="mt-6">
+          <div className="flex flex-wrap gap-4">
             {certificates.map((item, index) => (
-              <Card
+              <CertificateCard
                 key={index}
-                className="cursor-pointer transition-transform hover:scale-[1.02]"
+                certificate={item}
                 onClick={() => openCertDialog(item)}
-              >
-                <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
-                  <CardDescription>
-                    {item.issuer} | {item.date}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+              />
             ))}
           </div>
         </TabsContent>
       </Tabs>
 
-      {/* Dialog for displaying the certificate PDF */}
       <Dialog open={isCertDialogOpen} onOpenChange={setIsCertDialogOpen}>
-        <DialogContent className="max-w-[90vw] md:max-w-4xl h-[90vh] p-4">
+        <DialogContent className="max-w-[90vw] md:max-w-4xl h-[90vh] p-4 bg-gray-800 border-gray-700">
           <DialogHeader>
-            <DialogTitle className="text-black dark:text-white">
+            <DialogTitle className="text-gray-100">
               {selectedCert?.title}
             </DialogTitle>
-            <DialogDescription className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-400 mt-2">
               {selectedCert?.issuer} | {selectedCert?.date}
-            </DialogDescription>
+            </p>
           </DialogHeader>
-          <div className="flex-grow">
-            {selectedCert?.pdfUrl && (
-              <iframe
-                src={selectedCert.pdfUrl}
-                width="100%"
-                height="100%"
-                title={selectedCert.title}
-                className="rounded-lg"
-              ></iframe>
+          <div className="flex-grow overflow-auto">
+            {selectedCert?.imageUrl && (
+              <img
+                src={selectedCert.imageUrl}
+                alt={selectedCert.title}
+                className="rounded-lg w-full h-auto"
+              />
             )}
           </div>
         </DialogContent>
@@ -157,5 +139,3 @@ function ExperienceAndEducation({
     </section>
   );
 }
-
-export default ExperienceAndEducation;

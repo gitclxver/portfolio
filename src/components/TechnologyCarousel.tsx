@@ -19,7 +19,7 @@ function TechnologyCarousel({ technologies }: TechnologyCarouselProps) {
 
   const speed = 0.03;
   const hoverSpeed = 0.05;
-  const itemWidth = 120;
+  const itemWidth = 140; // Increased to accommodate larger icons
   const totalWidth = technologies.length * itemWidth;
 
   // Memoize animate with useCallback
@@ -80,8 +80,10 @@ function TechnologyCarousel({ technologies }: TechnologyCarouselProps) {
   ];
 
   return (
-    <section id="technologies" className="space-y-4 overflow-hidden">
-      <h2 className="text-3xl font-bold text-center">Technologies</h2>
+    <section id="technologies" className="space-y-6 overflow-hidden py-4">
+      <h2 className="text-3xl font-bold text-center text-gray-100">
+        Technologies
+      </h2>
       <div
         className="relative flex items-center justify-center w-full"
         onMouseEnter={() => setIsHovered(true)}
@@ -101,16 +103,18 @@ function TechnologyCarousel({ technologies }: TechnologyCarouselProps) {
           {loopedTechnologies.map((tech, index) => (
             <div
               key={index}
-              className="flex-none flex flex-col items-center justify-center w-[120px] p-2 transition-transform duration-300 hover:scale-110"
+              className="flex-none flex flex-col items-center justify-center w-[140px] p-3 transition-all duration-300 hover:scale-110"
             >
-              <div className="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center p-2">
+              <div className="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center p-3 shadow-md">
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="h-full w-full object-contain"
+                  className="h-12 w-12 object-contain" // Increased icon size
                 />
               </div>
-              <span className="mt-2 text-sm text-center">{tech.name}</span>
+              <span className="mt-3 text-md font-medium text-center text-gray-200">
+                {tech.name}
+              </span>
             </div>
           ))}
         </div>
