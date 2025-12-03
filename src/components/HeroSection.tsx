@@ -12,6 +12,7 @@ import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 interface HeroData {
   name: string;
   jobTitle: string;
+  position: string;
   location: string;
   age: number | string;
 }
@@ -74,6 +75,8 @@ function HeroSection({
           <span className="flex items-center gap-1">
             <MapPin className="h-4 w-4" /> {data.location}
           </span>
+          <span className="h-6 w-px bg-gray-600"></span>
+          <span>{data.position}</span>
         </div>
 
         {/* Icons and Contact Button below the text */}

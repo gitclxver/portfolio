@@ -24,11 +24,17 @@ import yodietMain from "../assets/projects/yodiet-main.png";
 import evMain from "../assets/projects/ev-era-main.png";
 import ev from "../assets/projects/ev-era.png";
 
+import aihome from "../assets/projects/ai-home.png";
+import aidash from "../assets/projects/ai-dashboard.png";
+import aipharm from "../assets/projects/ai-phamarcy.png";
+import aistats from "../assets/projects/ai-stats.png";
+
 const portfolioData = {
   hero: {
     profileImageUrl: profileImage,
     name: "T. Mpofu",
     jobTitle: "Software Engineer",
+    position: "Owner & Founder at Edulag Tutoring Academy",
     age: 18,
     location: "Windhoek, Namibia",
   },
@@ -38,11 +44,25 @@ const portfolioData = {
   },
   experience: [
     {
-      title: "Open Source Project Manager",
-      company: "NUST",
-      duration: "2023",
+      title: "NUST Annual Programming Competition - 6th Place",
+      company: "Namibia University of Science and Technology",
+      duration: "2025",
       description:
-        "Managed 5+ personal and team coding projects on GitHub, spanning game and web development. Showcased problem-solving, full-stack development, and agile execution.",
+        "Developed a Self Diagnosis Medical AI Chatbot using Firebase and React, achieving 6th place among 20+ teams in NUST's Annual Programming Competition.",
+    },
+    {
+      title: "Solutions Engineer Intern",
+      company: "Hangula Technologies",
+      duration: "2025 - Present",
+      description:
+        "Developing and maintaining web and mobile applications using Wordpress, Dart, Flutter and Firebase. Collaborating with cross-functional teams to design scalable solutions and improve user experience.",
+    },
+    {
+      title: "FossFest Hackathon",
+      company: "FossFest International Hackathon",
+      duration: "2025",
+      description:
+        "Built an open-source AI productivity tool in 48 hours at FOSS-Fest 2025, collaborating with a cross-functional team. Used Python, Flask, and NLP to prototype automated task prioritization",
     },
     {
       title: "EV-Era Expedition",
@@ -52,11 +72,11 @@ const portfolioData = {
         "Collaborated in a student team to solve real-world industry challenges, applying design thinking, agile methods, and technical skills (coding, UX). Prototyped solutions with stakeholder feedback and pitched to industry partners",
     },
     {
-      title: "FossFest Hackathon",
-      company: "FossFest International Hackathon",
-      duration: "2025",
+      title: "Open Source Project Manager",
+      company: "NUST",
+      duration: "2023",
       description:
-        "Built an open-source AI productivity tool in 48 hours at FOSS-Fest 2025, collaborating with a cross-functional team. Used Python, Flask, and NLP to prototype automated task prioritization",
+        "Managed 5+ personal and team coding projects on GitHub, spanning game and web development. Showcased problem-solving, full-stack development, and agile execution.",
     },
   ],
   education: [
@@ -111,6 +131,14 @@ const portfolioData = {
     {
       name: "Kotlin",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-plain.svg",
+    },
+    {
+      name: "Dart",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-plain.svg",
+    },
+    {
+      name: "Flutter",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg",
     },
     {
       name: "HTML",
@@ -200,6 +228,16 @@ const portfolioData = {
     },
     {
       id: "3",
+      title: "Self Diagnosis Medical AI Chatbot",
+      description: "AI Chatbot for preliminary medical diagnosis",
+      details:
+        "Developed using React for the frontend and Firebase for backend services",
+      github: "https://github.com/gitclxver/ALT4-MESMTF",
+      images: [aihome, aidash, aipharm, aistats],
+      date: "2025",
+    },
+    {
+      id: "4",
       title: "Yo Diet",
       description: "Kotlin App for health diet tracking",
       details: "Android App built using Jetpack Compose and SQLite database",
@@ -208,7 +246,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "4",
+      id: "5",
       title: "BlogAPI",
       description: "an API I built Using Spring Boot",
       details: "Built for the One Health Society Newsletter",
@@ -217,7 +255,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "5",
+      id: "6",
       title: "Stem App",
       description: "A modern website built to cater for Students in High Scool",
       details: "This project demonstrates my skills in front-end development",
@@ -226,7 +264,7 @@ const portfolioData = {
       date: "2024",
     },
     {
-      id: "6",
+      id: "7",
       title: "Java Snake Game",
       description: "Classic Snake game built with Java Swing",
       details: "Built to learn Java fundamentals and game development basics",
@@ -235,7 +273,7 @@ const portfolioData = {
       date: "2022",
     },
     {
-      id: "6",
+      id: "8",
       title: "EV Era Expedition",
       description: "A Project to Utilize EV's in the growing Namibian Economy",
       details:
