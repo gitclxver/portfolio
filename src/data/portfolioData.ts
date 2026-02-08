@@ -29,12 +29,14 @@ import aidash from "../assets/projects/ai-dashboard.png";
 import aipharm from "../assets/projects/ai-phamarcy.png";
 import aistats from "../assets/projects/ai-stats.png";
 
+import prysmMain from "../assets/projects/prysm-main.png";
+
 const portfolioData = {
   hero: {
     profileImageUrl: profileImage,
     name: "T. Mpofu",
     jobTitle: "Software Engineer",
-    position: "Owner & Founder at Edulag Tutoring Academy",
+    position: "Owner & Founder at Prysm Learn & Edulag Tutoring Academy",
     age: 18,
     location: "Windhoek, Namibia",
   },
@@ -44,11 +46,11 @@ const portfolioData = {
   },
   experience: [
     {
-      title: "NUST Annual Programming Competition - 6th Place",
-      company: "Namibia University of Science and Technology",
-      duration: "2025",
+      title: "Software Engineer",
+      company: "Sygond AB",
+      duration: "2026",
       description:
-        "Developed a Self Diagnosis Medical AI Chatbot using Firebase and React, achieving 6th place among 20+ teams in NUST's Annual Programming Competition.",
+        "Engineered a high-performance e-commerce platform from the ground up for an emerging fashion startup, utilizing Next.js for a seamless, SEO-optimized frontend",
     },
     {
       title: "Solutions Engineer Intern",
@@ -57,6 +59,14 @@ const portfolioData = {
       description:
         "Developing and maintaining web and mobile applications using Wordpress, Dart, Flutter and Firebase. Collaborating with cross-functional teams to design scalable solutions and improve user experience.",
     },
+    {
+      title: "NUST Annual Programming Competition - 6th Place",
+      company: "Namibia University of Science and Technology",
+      duration: "2025",
+      description:
+        "Developed a Self Diagnosis Medical AI Chatbot using Firebase and React, achieving 6th place among 20+ teams in NUST's Annual Programming Competition.",
+    },
+
     {
       title: "FossFest Hackathon",
       company: "FossFest International Hackathon",
@@ -216,6 +226,18 @@ const portfolioData = {
     },
     {
       id: "2",
+      title: "Prysm Learn",
+      description:
+        "A Startup I founded and built to provide affordable and accessible studying resources to students in Namibia, South Africa and Eswatini",
+      details:
+        "What started as an effort to build my tutoring business has now evolved into a more refined learning platform that provides students with a variety of resources such as past exam papers, notes, AI Planning and more to help students reach their full potential",
+      link: "https://prysmlearn.com",
+      github: "https://github.com/gitclxver/prysm",
+      images: [prysmMain],
+      date: "2026",
+    },
+    {
+      id: "3",
       title: "One Health Society Newsletter",
       description:
         "Newsletter website with React frontend and Java/Spring backend",
@@ -227,7 +249,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "3",
+      id: "4",
       title: "Self Diagnosis Medical AI Chatbot",
       description: "AI Chatbot for preliminary medical diagnosis",
       details:
@@ -237,7 +259,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "4",
+      id: "5",
       title: "Yo Diet",
       description: "Kotlin App for health diet tracking",
       details: "Android App built using Jetpack Compose and SQLite database",
@@ -246,7 +268,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "5",
+      id: "6",
       title: "BlogAPI",
       description: "an API I built Using Spring Boot",
       details: "Built for the One Health Society Newsletter",
@@ -255,7 +277,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "6",
+      id: "7",
       title: "Stem App",
       description: "A modern website built to cater for Students in High Scool",
       details: "This project demonstrates my skills in front-end development",
@@ -264,7 +286,7 @@ const portfolioData = {
       date: "2024",
     },
     {
-      id: "7",
+      id: "8",
       title: "Java Snake Game",
       description: "Classic Snake game built with Java Swing",
       details: "Built to learn Java fundamentals and game development basics",
@@ -273,7 +295,7 @@ const portfolioData = {
       date: "2022",
     },
     {
-      id: "8",
+      id: "9",
       title: "EV Era Expedition",
       description: "A Project to Utilize EV's in the growing Namibian Economy",
       details:
