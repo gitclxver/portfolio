@@ -6,7 +6,7 @@ const portfolioData = {
     name: "T. T. Mpofu",
     jobTitle: "Software Engineer",
     position: "Owner & Founder at Prysm Learn & Edulag Tutoring Academy",
-    age: 18,
+    age: 19,
     location: "Windhoek, Namibia",
   },
   socialLinks: {
