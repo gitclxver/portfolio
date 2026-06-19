@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: #2a1045;
+  --color-foreground: #faf5ff;
+  --color-card: #3d1a6e;
+  --color-card-foreground: #faf5ff;
+  --color-muted: #c4b5fd;
+  --color-muted-foreground: #ddd6fe;
+  --color-accent: #fbbf24;
+  --color-border: #6b21a8;
+  --font-sans: var(--font-inter);
+  --font-gloria: var(--font-gloria);
+  --font-mono: var(--font-fira-code);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), sans-serif;
+  min-height: 100vh;
+}
+
+.comic-panel {
+  border: 3px solid #000;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0px #000;
+  background-color: var(--color-card);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.comic-panel:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #000;
+}
+
+.font-gloria {
+  font-family: var(--font-gloria), cursive;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Custom Scrollbar for inner containers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
