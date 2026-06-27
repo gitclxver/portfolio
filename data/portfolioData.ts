@@ -72,6 +72,12 @@ const portfolioData = {
 
   certificates: [
     {
+      title: "Foss Fest International Hackathon Certificate",
+      issuer: "Foss Fest",
+      date: "2025",
+      imageUrl: "/assets/certificates/FossFestCertificate.png",
+    },
+    {
       title: "Docker Foundations Professional Certificate",
       issuer: "LinkedIn Learning",
       date: "2025",
