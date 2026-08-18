@@ -72,6 +72,12 @@ const portfolioData = {
 
   certificates: [
     {
+      title: "Fundamentals in Digital Marketing",
+      issuer: "Google",
+      date: "2026",
+      imageUrl: "/assets/certificates/DigitalMarketingCertificate.png",
+    },
+    {
       title: "Foss Fest International Hackathon Certificate",
       issuer: "Foss Fest",
       date: "2025",
@@ -164,7 +170,7 @@ const portfolioData = {
       details:
         "My first deployed website bringing awareness to environmental health",
       link: "https://nustonehealthsociety.org",
-      github: "https://github.com/gitclxver/one-health",
+      //github: "https://github.com/gitclxver/one-health",
       images: ["/assets/projects/onehealth-main.png", "/assets/projects/one-health-deployment.png"],
       date: "2025",
     },
