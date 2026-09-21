@@ -29,6 +29,13 @@ const portfolioData = {
         "Developing and maintaining web and mobile applications using Wordpress, Dart, Flutter and Firebase. Collaborating with cross-functional teams to design scalable solutions and improve user experience.",
     },
     {
+      title: "Google Cloud X NZZ Hackathon",
+      company: "Google Cloud, NZZ",
+      duration: "Sep 2026",
+      description:
+        "My team and I were able to utilize Google's Vertex AI BigQuery and Gemini to create an autonomous 24/7 desk that pulls in latest trends and crunches them into usable fact checked visual story pitch dossiers.",
+    },
+    {
       title: "NUST Annual Programming Competition - 6th Place",
       company: "Namibia University of Science and Technology",
       duration: "2025",
@@ -76,6 +83,12 @@ const portfolioData = {
       issuer: "Google",
       date: "2026",
       imageUrl: "/assets/certificates/DigitalMarketingCertificate.png",
+    },
+    {
+      title: "Google Cloud X NZZ Hackathon",
+      issuer: "Google Cloud, NZZ",
+      date: "2026",
+      imageUrl: "/assets/certificates/GoogleCloudCertificate.png",
     },
     {
       title: "Foss Fest International Hackathon Certificate",
@@ -153,8 +166,7 @@ const portfolioData = {
     {
       id: "4",
       title: "S1nta Clothing Store",
-      description:
-        "An online clothing store built with Next.js",
+      description: "An online clothing store built with Next.js",
       details:
         "This project demonstrates my skills in front-end development and e-commerce implementation",
       link: "https://s1nta.vercel.app",
@@ -171,7 +183,10 @@ const portfolioData = {
         "My first deployed website bringing awareness to environmental health",
       link: "https://nustonehealthsociety.org",
       //github: "https://github.com/gitclxver/one-health",
-      images: ["/assets/projects/onehealth-main.png", "/assets/projects/one-health-deployment.png"],
+      images: [
+        "/assets/projects/onehealth-main.png",
+        "/assets/projects/one-health-deployment.png",
+      ],
       date: "2025",
     },
     {
@@ -237,7 +252,10 @@ const portfolioData = {
       details:
         "We created an event company that helps to organize a variety of events such as outdoor movie nights, music festivals, and community gatherings powered entirely by electric vehicles (EVs)",
       link: "https://hub.demola.net/team/1776",
-      images: ["/assets/projects/ev-era-main.png", "/assets/projects/ev-era.png"],
+      images: [
+        "/assets/projects/ev-era-main.png",
+        "/assets/projects/ev-era.png",
+      ],
       date: "2024",
     },
   ] satisfies Project[],
