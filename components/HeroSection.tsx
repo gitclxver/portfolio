@@ -58,13 +58,13 @@ export default function HeroSection({
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 3, 
+    yearsOfExperience: 5, 
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 5 &&
-            this.yearsOfExperience >= 2
+            this.yearsOfExperience >= 3
         );
     }
 };`;
@@ -105,9 +105,9 @@ export default function HeroSection({
         <div className="space-y-6">
           <h1 className="font-bold text-purple-50 font-gloria leading-tight flex flex-col items-center lg:items-start">
             <span className="text-xl md:text-2xl">Hi, I&apos;m</span>
-            <span className="text-amber-400 text-3xl md:text-4xl mt-2">Tinomuvongaishe</span>
+            <span className="text-amber-500 text-3xl md:text-4xl mt-2">Tinomuvongaishe</span>
             <span className="text-amber-400 text-xl md:text-2xl mt-1">Tawanda</span>
-            <span className="text-amber-400 text-3xl md:text-4xl mt-1">Mpofu</span>
+            <span className="text-amber-500 text-3xl md:text-4xl mt-1">Mpofu</span>
           </h1>
 
           <div className="flex flex-col gap-4 text-lg text-purple-200">
@@ -131,7 +131,7 @@ export default function HeroSection({
                 Software Engineer
               </span>
               <span className="comic-panel px-4 py-2 bg-purple-900/50 rounded-full text-purple-100 border-2 border-black shadow-[2px_2px_0px_#000] font-bold">
-                {data.age} Years Old
+                {data.age} Year Old
               </span>
               <span className="comic-panel px-4 py-2 bg-purple-900/50 rounded-full text-purple-100 flex items-center gap-1 border-2 border-black shadow-[2px_2px_0px_#000] font-bold">
                 <MapPin className="h-4 w-4 text-amber-400" /> {data.location}
