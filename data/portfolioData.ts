@@ -1,4 +1,9 @@
-import type { CertificateItem, EducationItem, ExperienceItem, Project } from "@/types/types";
+import type {
+  CertificateItem,
+  EducationItem,
+  ExperienceItem,
+  Project,
+} from "@/types/types";
 import { details } from "framer-motion/client";
 
 const portfolioData = {
@@ -186,8 +191,8 @@ const portfolioData = {
       link: "https://nustonehealthsociety.org",
       //github: "https://github.com/gitclxver/one-health",
       images: [
+        "/assets/projects/onehealth-info.png",
         "/assets/projects/onehealth-main.png",
-        "/assets/projects/one-health-deployment.png",
       ],
       date: "2025",
     },
