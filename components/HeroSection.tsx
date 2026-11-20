@@ -74,8 +74,8 @@ export default function HeroSection({
       id="home"
       className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center gap-12 py-20 px-6 md:px-12 w-full max-w-7xl mx-auto"
     >
-      <motion.div 
-        style={{ opacity: quoteOpacity }} 
+      <motion.div
+        style={{ opacity: quoteOpacity }}
         className="absolute top-10 left-0 w-full text-center pointer-events-none px-4"
       >
         <p className="text-purple-100 font-gloria text-xl md:text-2xl tracking-widest italic drop-shadow-md">
@@ -103,11 +103,19 @@ export default function HeroSection({
         )}
 
         <div className="space-y-6">
-          <h1 className="font-bold text-purple-50 font-gloria leading-tight flex flex-col items-center lg:items-start">
-            <span className="text-xl md:text-2xl">Hi, I&apos;m</span>
-            <span className="text-amber-500 text-3xl md:text-4xl mt-2">Tinomuvongaishe</span>
-            <span className="text-amber-400 text-xl md:text-2xl mt-1">Tawanda</span>
-            <span className="text-amber-500 text-3xl md:text-4xl mt-1">Mpofu</span>
+          <h1 className="text-purple-50 leading-tight flex flex-col items-center lg:items-start">
+            <span className="font-gloria font-bold text-xl md:text-2xl">
+              Hi, I&apos;m
+            </span>
+            <span className="font-gloria font-normal text-white text-4xl md:text-5xl mt-2">
+              Tinomuvongaishe
+            </span>
+            <span className="font-gloria font-normal text-[#ffe34d] text-2xl md:text-3xl mt-1">
+              Tawanda
+            </span>
+            <span className="font-gloria font-normal text-white text-4xl md:text-5xl mt-1">
+              Mpofu
+            </span>
           </h1>
 
           <div className="flex flex-col gap-4 text-lg text-purple-200">
@@ -116,16 +124,20 @@ export default function HeroSection({
                 Owner & Founder
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-3 self-center lg:self-start">
               <div className="comic-panel px-4 py-2 bg-purple-800 border-2 border-black shadow-[4px_4px_0px_#000] inline-block">
-                <p className="text-lg text-amber-300 font-sans font-semibold">Prysm Learn</p>
+                <p className="text-lg text-amber-300 font-sans font-semibold">
+                  Prysm Learn
+                </p>
               </div>
               <div className="comic-panel px-4 py-2 bg-purple-800 border-2 border-black shadow-[4px_4px_0px_#000] inline-block">
-                <p className="text-lg text-amber-300 font-sans font-semibold">Edulag Tutoring Academy</p>
+                <p className="text-lg text-amber-300 font-sans font-semibold">
+                  Edulag Tutoring Academy
+                </p>
               </div>
             </div>
-            
+
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm mt-6 font-sans">
               <span className="comic-panel px-4 py-2 bg-purple-900/50 rounded-full text-purple-100 border-2 border-black shadow-[2px_2px_0px_#000] font-bold">
                 Software Engineer
@@ -145,16 +157,16 @@ export default function HeroSection({
               onOpenChange={setIsContactDialogOpen}
             >
               <DialogTrigger asChild>
-                <Button
-                  className="comic-panel font-gloria text-lg px-6 py-6 bg-amber-400 text-black hover:bg-amber-300 border-2 border-black shadow-[4px_4px_0px_#000] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all"
-                >
+                <Button className="comic-panel font-gloria text-lg px-6 py-6 bg-amber-400 text-black hover:bg-amber-300 border-2 border-black shadow-[4px_4px_0px_#000] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all">
                   <Phone className="h-5 w-5 mr-2" />
                   Contact Me
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[425px] comic-panel bg-[#3d1a6e] border-4 border-black">
                 <DialogHeader>
-                  <DialogTitle className="font-gloria text-2xl text-amber-300">Get in Touch</DialogTitle>
+                  <DialogTitle className="font-gloria text-2xl text-amber-300">
+                    Get in Touch
+                  </DialogTitle>
                   <p className="text-purple-100 font-sans">
                     Feel free to reach out to me through any of these platforms.
                   </p>
@@ -212,44 +224,80 @@ export default function HeroSection({
               <div className="w-3 h-3 rounded-full bg-amber-500 border border-black"></div>
               <div className="w-3 h-3 rounded-full bg-green-500 border border-black"></div>
             </div>
-            <div className="mx-auto text-xs text-gray-400 font-mono">profile.js</div>
+            <div className="mx-auto text-xs text-gray-400 font-mono">
+              profile.js
+            </div>
           </div>
           <div className="p-6 overflow-x-auto">
             <pre className="font-mono text-sm md:text-base text-purple-300 leading-relaxed">
               <code>
-                <span className="text-pink-400">const</span> <span className="text-blue-400">profile</span> <span className="text-pink-400">=</span> {"{"}
+                <span className="text-pink-400">const</span>{" "}
+                <span className="text-blue-400">profile</span>{" "}
+                <span className="text-pink-400">=</span> {"{"}
                 <br />
-                {"    "}name: <span className="text-green-400">'T. T. Mpofu'</span>,
+                {"    "}name:{" "}
+                <span className="text-green-400">'T. T. Mpofu'</span>,
                 <br />
-                {"    "}title: <span className="text-green-400">'Software Engineer | Founder @ Prysm Learn'</span>,
+                {"    "}title:{" "}
+                <span className="text-green-400">
+                  'Software Engineer | Founder @ Prysm Learn'
+                </span>
+                ,
                 <br />
                 {"    "}skills: [
                 <br />
-                {"        "}<span className="text-green-400">'React'</span>, <span className="text-green-400">'Next.js'</span>, <span className="text-green-400">'TypeScript'</span>, <span className="text-green-400">'Node.js'</span>,
+                {"        "}
+                <span className="text-green-400">'React'</span>,{" "}
+                <span className="text-green-400">'Next.js'</span>,{" "}
+                <span className="text-green-400">'TypeScript'</span>,{" "}
+                <span className="text-green-400">'Node.js'</span>,
                 <br />
-                {"        "}<span className="text-green-400">'Python'</span>, <span className="text-green-400">'Flutter'</span>, <span className="text-green-400">'Docker'</span>, <span className="text-green-400">'Firebase'</span>, <span className="text-green-400">'Postgres'</span>
+                {"        "}
+                <span className="text-green-400">'Python'</span>,{" "}
+                <span className="text-green-400">'Flutter'</span>,{" "}
+                <span className="text-green-400">'Docker'</span>,{" "}
+                <span className="text-green-400">'Firebase'</span>,{" "}
+                <span className="text-green-400">'Postgres'</span>
                 <br />
                 {"    "}],
                 <br />
-                {"    "}hardWorker: <span className="text-amber-400">true</span>,
+                {"    "}hardWorker: <span className="text-amber-400">true</span>
+                ,
                 <br />
-                {"    "}quickLearner: <span className="text-amber-400">true</span>,
+                {"    "}quickLearner:{" "}
+                <span className="text-amber-400">true</span>,
                 <br />
-                {"    "}problemSolver: <span className="text-amber-400">true</span>,
+                {"    "}problemSolver:{" "}
+                <span className="text-amber-400">true</span>,
                 <br />
-                {"    "}yearsOfExperience: <span className="text-amber-400">3</span>,
+                {"    "}yearsOfExperience:{" "}
+                <span className="text-amber-400">3</span>,
                 <br />
-                {"    "}<span className="text-blue-300">hireable</span>: <span className="text-pink-400">function</span>() {"{"}
+                {"    "}
+                <span className="text-blue-300">hireable</span>:{" "}
+                <span className="text-pink-400">function</span>() {"{"}
                 <br />
-                {"        "}<span className="text-pink-400">return</span> (
+                {"        "}
+                <span className="text-pink-400">return</span> (
                 <br />
-                {"            "}<span className="text-pink-400">this</span>.hardWorker <span className="text-pink-400">&&</span>
+                {"            "}
+                <span className="text-pink-400">this</span>.hardWorker{" "}
+                <span className="text-pink-400">&&</span>
                 <br />
-                {"            "}<span className="text-pink-400">this</span>.problemSolver <span className="text-pink-400">&&</span>
+                {"            "}
+                <span className="text-pink-400">this</span>.problemSolver{" "}
+                <span className="text-pink-400">&&</span>
                 <br />
-                {"            "}<span className="text-pink-400">this</span>.skills.length {">="} <span className="text-amber-400">5</span> <span className="text-pink-400">&&</span>
+                {"            "}
+                <span className="text-pink-400">this</span>.skills.length {">="}{" "}
+                <span className="text-amber-400">5</span>{" "}
+                <span className="text-pink-400">&&</span>
                 <br />
-                {"            "}<span className="text-pink-400">this</span>.yearsOfExperience {">="} <span className="text-amber-400">2</span>
+                {"            "}
+                <span className="text-pink-400">
+                  this
+                </span>.yearsOfExperience {">="}{" "}
+                <span className="text-amber-400">2</span>
                 <br />
                 {"        "});
                 <br />
