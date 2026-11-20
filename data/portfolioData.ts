@@ -1,4 +1,5 @@
 import type { CertificateItem, EducationItem, ExperienceItem, Project } from "@/types/types";
+import { details } from "framer-motion/client";
 
 const portfolioData = {
   hero: {
@@ -166,7 +167,8 @@ const portfolioData = {
     {
       id: "4",
       title: "S1nta Clothing Store",
-      description: "An online clothing store built with Next.js",
+      description:
+        "An online serverless clothing store built purely with Next.js and FireStore",
       details:
         "This project demonstrates my skills in front-end development and e-commerce implementation",
       link: "https://s1nta.vercel.app",
@@ -178,7 +180,7 @@ const portfolioData = {
       id: "5",
       title: "One Health Society Newsletter",
       description:
-        "Newsletter website with React frontend and Java/Spring backend",
+        "Newsletter website with React frontend and Java Spring Boot backend",
       details:
         "My first deployed website bringing awareness to environmental health",
       link: "https://nustonehealthsociety.org",
@@ -191,6 +193,26 @@ const portfolioData = {
     },
     {
       id: "6",
+      title: "Food Delivery Ballerina API Implimentation",
+      description: "An API Built in Ballerina with Mongo DB and Docker",
+      details:
+        "I built this as an end o semester project in order to  in order to demonstrate understanding of API's, Microservice Architecture, and Distributed Systems",
+      github: "https://github.com/gitclxver/dsa-assign2-2026",
+      images: ["/assets/projects/food-delivery.png"],
+      date: "2026",
+    },
+    {
+      id: "7",
+      title: "Bookit Python API",
+      description: "A Python API for Bookings and Appointments",
+      details:
+        "I am currently developing a python API in order to automate bookings, payments and lesson reminders for my tutoring business",
+      github: "https://github.com/gitclxver/bookit",
+      images: ["/assets/projects/bookit.png"],
+      date: "2026",
+    },
+    {
+      id: "8",
       title: "Self Diagnosis Medical AI Chatbot",
       description: "AI Chatbot for preliminary medical diagnosis",
       details:
@@ -205,7 +227,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "7",
+      id: "9",
       title: "Yo Diet",
       description: "Kotlin App for health diet tracking",
       details: "Android App built using Jetpack Compose and SQLite database",
@@ -214,7 +236,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "8",
+      id: "10",
       title: "BlogAPI",
       description: "an API I built Using Spring Boot",
       details: "Built for the One Health Society Newsletter",
@@ -223,7 +245,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "9",
+      id: "11",
       title: "Stem App",
       description: "A modern website built to cater for Students in High Scool",
       details: "This project demonstrates my skills in front-end development",
@@ -237,7 +259,7 @@ const portfolioData = {
       date: "2024",
     },
     {
-      id: "10",
+      id: "12",
       title: "Java Snake Game",
       description: "Classic Snake game built with Java Swing",
       details: "Built to learn Java fundamentals and game development basics",
@@ -246,7 +268,7 @@ const portfolioData = {
       date: "2022",
     },
     {
-      id: "11",
+      id: "13",
       title: "EV Era Expedition",
       description: "A Project to Utilize EV's in the growing Namibian Economy",
       details:
