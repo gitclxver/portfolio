@@ -213,7 +213,8 @@ const portfolioData = {
       details:
         "I am currently developing a python API in order to automate bookings, payments and lesson reminders for my tutoring business",
       github: "https://github.com/gitclxver/bookit",
-      images: ["/assets/projects/bookit.png"],
+      link: "https://api-bookit.vercel.app/",
+      images: ["/assets/projects/bookit.png", "assets/projects/bookit-demo.png"],
       date: "2026",
     },
     {
