@@ -137,28 +137,20 @@ const portfolioData = {
   projects: [
     {
       id: "1",
-      title: "Portfolio Website",
-      description:
-        "A modern portfolio website built with React and Tailwind CSS",
+      title: "Bookit Python API",
+      description: "A Python API for Bookings and Appointments",
       details:
-        "This project demonstrates my skills in front-end development, responsive design, and component-based architecture",
-      github: "https://github.com/gitclxver/portfolio",
-      images: ["https://placehold.co/600x800/000000/FFFFFF?text=Portfolio"],
-      date: "2024",
-    },
-    {
-      id: "2",
-      title: "Sygond E-commerce Platform",
-      description:
-        "A full-stack e-commerce platform built with Next.js and Firebase for a fashion startup based in Sweden to cater for a Scandanavian audience built complete with payment and shipment intergrations",
-      details:
-        "This project showcases my ability to build scalable web applications, implement user authentication, and integrate payment gateways",
-      link: "https://sygond.com",
-      images: ["assets/projects/sygond-main.png"],
+        "I am currently developing a python API in order to automate bookings, payments and lesson reminders for my tutoring business",
+      github: "https://github.com/gitclxver/bookit",
+      link: "https://api-bookit.vercel.app/",
+      images: [
+        "/assets/projects/bookit.png",
+        "assets/projects/bookit-demo.png",
+      ],
       date: "2026",
     },
     {
-      id: "3",
+      id: "2",
       title: "Prysm Learn",
       description:
         "A Startup I founded and built to provide affordable and accessible studying resources to students in Namibia, South Africa and Eswatini",
@@ -170,7 +162,7 @@ const portfolioData = {
       date: "2026",
     },
     {
-      id: "4",
+      id: "3",
       title: "S1nta Clothing Store",
       description:
         "An online serverless clothing store built purely with Next.js and FireStore",
@@ -179,6 +171,17 @@ const portfolioData = {
       link: "https://s1nta.vercel.app",
       github: "https://github.com/gitclxver/s1nta-clothing-store",
       images: ["assets/projects/s1nta-main.png"],
+      date: "2026",
+    },
+    {
+      id: "4",
+      title: "Sygond E-commerce Platform",
+      description:
+        "A full-stack e-commerce platform built with Next.js and Firebase for a fashion startup based in Sweden to cater for a Scandanavian audience built complete with payment and shipment intergrations",
+      details:
+        "This project showcases my ability to build scalable web applications, implement user authentication, and integrate payment gateways",
+      link: "https://sygond.com",
+      images: ["assets/projects/sygond-main.png"],
       date: "2026",
     },
     {
@@ -208,17 +211,6 @@ const portfolioData = {
     },
     {
       id: "7",
-      title: "Bookit Python API",
-      description: "A Python API for Bookings and Appointments",
-      details:
-        "I am currently developing a python API in order to automate bookings, payments and lesson reminders for my tutoring business",
-      github: "https://github.com/gitclxver/bookit",
-      link: "https://api-bookit.vercel.app/",
-      images: ["/assets/projects/bookit.png", "assets/projects/bookit-demo.png"],
-      date: "2026",
-    },
-    {
-      id: "8",
       title: "Self Diagnosis Medical AI Chatbot",
       description: "AI Chatbot for preliminary medical diagnosis",
       details:
@@ -233,7 +225,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "9",
+      id: "8",
       title: "Yo Diet",
       description: "Kotlin App for health diet tracking",
       details: "Android App built using Jetpack Compose and SQLite database",
@@ -242,7 +234,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "10",
+      id: "9",
       title: "BlogAPI",
       description: "an API I built Using Spring Boot",
       details: "Built for the One Health Society Newsletter",
@@ -251,7 +243,7 @@ const portfolioData = {
       date: "2025",
     },
     {
-      id: "11",
+      id: "10",
       title: "Stem App",
       description: "A modern website built to cater for Students in High Scool",
       details: "This project demonstrates my skills in front-end development",
@@ -265,7 +257,7 @@ const portfolioData = {
       date: "2024",
     },
     {
-      id: "12",
+      id: "11",
       title: "Java Snake Game",
       description: "Classic Snake game built with Java Swing",
       details: "Built to learn Java fundamentals and game development basics",
@@ -274,7 +266,7 @@ const portfolioData = {
       date: "2022",
     },
     {
-      id: "13",
+      id: "12",
       title: "EV Era Expedition",
       description: "A Project to Utilize EV's in the growing Namibian Economy",
       details:
